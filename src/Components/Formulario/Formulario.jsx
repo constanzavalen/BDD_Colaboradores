@@ -13,7 +13,7 @@ const Formulario = ({clientes, setClientes, setMostrarMensaje, setClase, setMens
     if (!nombre || !correo || !edad || !cargo || !telefono) {
       setMostrarMensaje(true);
       setMensaje('Todos los datos son obligatorios')
-      setClase('alert alert-success mt-4')
+      setClase('alert alert-danger mt-4')
     } else{
       setMostrarMensaje(false)
       setName('')
@@ -25,7 +25,7 @@ const Formulario = ({clientes, setClientes, setMostrarMensaje, setClase, setMens
       setClientes([...clientes, cliente])
       setMostrarMensaje(true);
       setMensaje('Cliente agregado correctamente')
-      setClase('alert alert-danger mt-4')
+      setClase('alert alert-success mt-4')
     }
   }
 
